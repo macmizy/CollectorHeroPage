@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root{
+    --color: whitesmoke;
+    --font-family:Arial, Helvetica, sans-serif,
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(confetti-doodles.svg);
+    background-position: center;
+    background-size: cover;
+    color: var(--color);
+    font-family: sans-serif;
+    padding: 5px 50px;
+    max-width: 100%;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    
+}
+
+header img{
+    display: none;
+}
+
+header a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--color);
+    transition: .3s ease-in-out;
+}
+
+header a:hover{
+    color: purple;
+}
+
+header button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+main{
+    margin: 70px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 50px;
+}  
+
+.info h1{
+    font-family: var(--font-family);
+    font-size: 80px;
+    
+}
+
+.info h3{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info button{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.sub-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 300px;
+    
+    
+}
+
+.sub-info span{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.nftpage{
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    height: fit-content;   
+}
+
+.top-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 12px;
+
+}
+
+.top-info .nft-name{
+    font-weight: bold;
+}
+
+.top-info .material-symbols-outlined {
+  font-size: 15px; 
+}
+
+
+.nftpage img{
+    border-radius: 20px;
+    margin:10px;
+}  
+
+.nftpage .buttom-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: var(--font-family);
+}
+
+.nftpage .right-p{
+    text-align: right;
+}
+
+@media(max-width: 500px){
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding:0;
+    }
+
+    header{
+        border-bottom: 1px solid white;
+        padding: 10px;
+        position: sticky;
+        background-color: rgba(45, 2, 106, 1);
+        top: 0;
+      width: 100% ;
+        
+    }
+
+    header img{
+        display: flex;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    header .nav{
+        display: none;
+    }
+
+    header button{
+        display: none;
+    }
+    
+    main{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 20px;
+        margin-top: 70px;
+    }
+    
+    .info{
+        text-align: center;
+    }
+    
+    .info h1{
+        font-size: 50px;
+    }
+    
+    .sub-info{
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
